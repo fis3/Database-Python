@@ -14,8 +14,7 @@ def delete(tabla, where=""):
     if where : where = " WHERE {0} ".format(" AND ".join(where))
     return """DELETE FROM {tabla} {where};""".format(tabla=tabla,where=where)
 
-print insert("tabla1", {"id":"111","campo1":""})
-
-print select(tabla="tabla2",campos=["id","campo2"])
-
-print delete(tabla="tabla3",where=["1=1","True!=False"])
+## EJEMPLOS DE USO ##
+#print insert("tabla1", {"id":"111","campo1":""})
+#print select(tabla="tabla2",campos=["id","campo2"])
+#print delete(tabla="tabla3",where=["1=1","True!=False"])
